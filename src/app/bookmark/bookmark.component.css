@@ -1,0 +1,40 @@
+.Sec{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+}
+
+.Category{
+  width: 100%;
+  height: 100vh;
+}
+.A{
+  border: 1px solid yellow;
+  width: 100%;
+  height: 50vh;
+}
+
+.B{
+  border: 1px solid Green;
+  width: 100%;
+  height: 50vh;
+}
+
+.C{
+  border: 4px solid Black;
+  width: 100%;
+  height: 100vh;
+}
+
+a{
+  border: 1px solid black;
+  font-style: normal;
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+}

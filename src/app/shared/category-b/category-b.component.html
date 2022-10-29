@@ -1,0 +1,16 @@
+<table id="customers">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Button</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let bookmark of obj">
+      <td>{{bookmark.title}}</td>
+      <td>
+        <button routerLink = "/ShowDetails">Details</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

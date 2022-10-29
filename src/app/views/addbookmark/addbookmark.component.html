@@ -1,0 +1,25 @@
+<form [formGroup]="reactiveroleform" (ngSubmit)="AddBookMark()">
+  <h1>Add Bookmark</h1>
+  <div class="icon">
+    <i class="fas fa-user-circle"></i>
+  </div>
+  <div class="formcontainer">
+    <div class="container">
+      <label for="title"><strong>Title</strong></label>
+      <input type="text" placeholder="title" formControlName="title">
+      <small *ngIf="reactiveroleform.get('title')?.invalid && reactiveroleform.get('title')?.touched" class="text-danger">Title is required.</small>
+      <label for="url"><strong>Url</strong></label>
+      <input type="text" placeholder="Url" formControlName="url" required>
+      <small *ngIf="reactiveroleform.get('url')?.invalid && reactiveroleform.get('url')?.touched" class="text-danger">Url is required.</small>
+      <label for="category"><strong>Category</strong></label>
+      <input type="text" placeholder="Category" formControlName="category" required>
+      <small *ngIf="reactiveroleform.get('category')?.invalid && reactiveroleform.get('category')?.touched" class="text-danger">Category is required.</small>
+    </div>
+    <div>
+      <button class="cancle">Cancel</button>
+      <button type="submit"><strong>Save</strong></button>
+
+    </div>
+
+  </div>
+</form>
